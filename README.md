@@ -1,5 +1,4 @@
-[README.md](https://github.com/user-attachments/files/29162722/README.md)
-# Freezplugin# ScreenShareFreeze
+# ScreenShareFreeze
 
 Paper/Spigot Plugin fuer Staff-Screenshares.
 

@@ -143,6 +143,7 @@ public final class ScreenShareFreezePlugin extends JavaPlugin implements Listene
 
         send(sender, "frozen-staff", target);
         send(target, "frozen-target");
+        showFreezeTitle(target);
         return true;
     }
 
@@ -403,6 +404,7 @@ public final class ScreenShareFreezePlugin extends JavaPlugin implements Listene
                 pluginTeleport = false;
             }
             send(player, "frozen-target");
+            showFreezeTitle(player);
         }, 1L);
     }
 
@@ -443,6 +445,19 @@ public final class ScreenShareFreezePlugin extends JavaPlugin implements Listene
         player.setFlying(false);
         player.setFallDistance(0.0F);
         player.setVelocity(new Vector(0.0, 0.0, 0.0));
+    }
+
+    private void showFreezeTitle(Player player) {
+        if (!getConfig().getBoolean("freeze.show-title", true)) {
+            return;
+        }
+
+        String title = color(getConfig().getString("freeze.title", "&cScreenshare"));
+        String subtitle = color(getConfig().getString("freeze.subtitle", "&7Dont close Minecraft"));
+        int fadeIn = getConfig().getInt("freeze.title-fade-in", 10);
+        int stay = getConfig().getInt("freeze.title-stay", 70);
+        int fadeOut = getConfig().getInt("freeze.title-fade-out", 20);
+        player.sendTitle(title, subtitle, fadeIn, stay, fadeOut);
     }
 
     private void restoreFreezeProtection(Player player, FrozenPlayer frozen) {

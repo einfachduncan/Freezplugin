@@ -18,6 +18,12 @@ freeze:
   lock-head: true
   block-inventory: true
   close-inventory-tick: true
+  show-title: true
+  title: "&cScreenshare"
+  subtitle: "&7Dont close Minecraft"
+  title-fade-in: 10
+  title-stay: 70
+  title-fade-out: 20
 
 messages:
   prefix: "&8[&bSS&8] &7"

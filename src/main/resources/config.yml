@@ -18,25 +18,26 @@ freeze:
   lock-head: true
   block-inventory: true
   close-inventory-tick: true
+  show-title: true
+  title: "&cScreenshare"
+  subtitle: "&7Dont close Minecraft"
+  title-fade-in: 10
+  title-stay: 70
+  title-fade-out: 20
 
 messages:
-prefix: "&8[&bSS&8] &7"
-no-permission: "&cYou do not have permission to do that."
-only-players: "&cOnly players can use this command."
-player-not-found: "&cPlayer not found."
-cannot-freeze-bypass: "&cThis player cannot be frozen."
-already-frozen: "&cThis player is already frozen."
-frozen-staff: "&a%player% has been frozen for a screenshare."
-frozen-target: "&cYou have been frozen for a screenshare. Do not disconnect or close Minecraft."
-unfrozen-staff: "&a%player% has been released."
-unfrozen-target: "&aThe screenshare has ended. You may move again."
-not-frozen: "&cThis player is not frozen."
-blocked-command: "&cYou are frozen and may only use /msg, /r and /helpop."
-world-not-found: "&cThe screenshare world configured in the config was not found."
-teleport-failed: "&cTeleport failed. Check the configured world and coordinates."
-reload-success: "&aConfiguration reloaded."
-
-disconnect-warning: "&cLeaving the server or closing Minecraft during a screenshare may be treated as evidence destruction."
-disconnect-broadcast: "&c%player% disconnected during an active screenshare."
-evidence-destruction: "&4Closing Minecraft, logging out, uninstalling mods, deleting files or otherwise interfering with the screenshare may be treated as evidence destruction and can result in punishment."
-
+  prefix: "&8[&bSS&8] &7"
+  no-permission: "&cDazu hast du keine Rechte."
+  only-players: "&cNur Spieler koennen diesen Command benutzen."
+  player-not-found: "&cSpieler nicht gefunden."
+  cannot-freeze-bypass: "&cDieser Spieler kann nicht eingefroren werden."
+  already-frozen: "&cDieser Spieler ist bereits eingefroren."
+  frozen-staff: "&a%player% wurde fuer den Screenshare eingefroren."
+  frozen-target: "&cDu wurdest fuer einen Screenshare eingefroren. Bitte nicht disconnecten."
+  unfrozen-staff: "&a%player% wurde wieder freigegeben."
+  unfrozen-target: "&aDer Screenshare ist beendet. Du kannst dich wieder bewegen."
+  not-frozen: "&cDieser Spieler ist nicht eingefroren."
+  blocked-command: "&cDu bist eingefroren und kannst nur /msg, /r und /helpop benutzen."
+  world-not-found: "&cDie Screenshare-Welt aus der Config wurde nicht gefunden."
+  teleport-failed: "&cTeleport konnte nicht ausgefuehrt werden. Pruefe Welt und Koordinaten."
+  reload-success: "&aConfig wurde neu geladen."
