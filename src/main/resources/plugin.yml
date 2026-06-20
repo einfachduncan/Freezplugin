@@ -1,0 +1,22 @@
+name: ScreenShareFreeze
+version: 1.0.0
+main: de.duncan.screenshare.ScreenShareFreezePlugin
+api-version: "1.21"
+author: Duncan
+description: Staff screenshare freeze commands with /ss and /dss.
+commands:
+  ss:
+    description: Freeze a player for screenshare checks or reload the config.
+    usage: /ss <spieler|reload>
+    permission: screenshare.use
+  dss:
+    description: End a screenshare freeze.
+    usage: /dss <spieler>
+    permission: screenshare.use
+permissions:
+  screenshare.use:
+    description: Allows using /ss and /dss.
+    default: op
+  screenshare.bypass:
+    description: Prevents a player from being frozen.
+    default: op

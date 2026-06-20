@@ -1,0 +1,37 @@
+# STAFF_TO_TARGET = Staff wird zum Spieler teleportiert.
+# TARGET_TO_STAFF = Spieler wird zum Staff teleportiert.
+# FIXED_LOCATION = Staff und Spieler werden zu der Location unten teleportiert.
+teleport-mode: FIXED_LOCATION
+
+screenshare-location:
+  enabled: true
+  world: world
+  x: 0.5
+  y: 80.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+freeze:
+  prevent-flying-kick: true
+  cancel-flying-kick: true
+  lock-head: true
+  block-inventory: true
+  close-inventory-tick: true
+
+messages:
+  prefix: "&8[&bSS&8] &7"
+  no-permission: "&cDazu hast du keine Rechte."
+  only-players: "&cNur Spieler koennen diesen Command benutzen."
+  player-not-found: "&cSpieler nicht gefunden."
+  cannot-freeze-bypass: "&cDieser Spieler kann nicht eingefroren werden."
+  already-frozen: "&cDieser Spieler ist bereits eingefroren."
+  frozen-staff: "&a%player% wurde fuer den Screenshare eingefroren."
+  frozen-target: "&cDu wurdest fuer einen Screenshare eingefroren. Bitte nicht disconnecten."
+  unfrozen-staff: "&a%player% wurde wieder freigegeben."
+  unfrozen-target: "&aDer Screenshare ist beendet. Du kannst dich wieder bewegen."
+  not-frozen: "&cDieser Spieler ist nicht eingefroren."
+  blocked-command: "&cDu bist eingefroren und kannst nur /msg, /r und /helpop benutzen."
+  world-not-found: "&cDie Screenshare-Welt aus der Config wurde nicht gefunden."
+  teleport-failed: "&cTeleport konnte nicht ausgefuehrt werden. Pruefe Welt und Koordinaten."
+  reload-success: "&aConfig wurde neu geladen."
