@@ -20,7 +20,7 @@ freeze:
   close-inventory-tick: true
   show-title: true
   title: "&cScreenshare"
-  subtitle: "&7Don't close Minecraft\n&7Come Discord Waitingroom"
+  subtitle: "&7Don't close Minecraft | &7Come Discord Waitingroom"
   title-fade-in: 10
   title-stay: 70
   title-fade-out: 20
